@@ -1,8 +1,8 @@
 <?php
-$hostname = "shareddb1a.hosting.stackcp.net";
-$username = 'cl24-jaiy';
-$password = 'johnjamesjinjon';
-$dbname = 'cl24-jaiyeoba';
+$hostname = "xxxxxxxxx";
+$username = "xxxxxxxxx";
+$password = "xxxxxxxxx";
+$dbname = "xxxxxxxxx";
 
 
 $conn = new mysqli($hostname, $username, $password, $dbname);
