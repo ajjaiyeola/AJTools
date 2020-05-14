@@ -28,7 +28,7 @@ request.send();
 }
 
 listCreate('json-datalist','ajax', 'degrees.json');
-listCreate('second','ajax2', 'thejobs.json');
+listCreate('second','ajax2', 'samplejobs.json');
 listCreate('third','ajax3', 'industries.json');
 
 // function for hiding and showing appropriate questions
