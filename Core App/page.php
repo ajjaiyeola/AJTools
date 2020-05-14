@@ -7,8 +7,6 @@
 
 <?php endblock() ?>
 
-
-
 <?php startblock('main') ?>
 
     <div class="intro-header"> 
@@ -17,16 +15,6 @@
                 <div class="col-lg-12">
                         <div class="intro-message">
 
-<?php
-// echo "<h2>Your Input:</h2>";
-// echo "job:".$job;
-// echo "<br>";
-// echo "industry:".$industry;
-// echo "<br>";
-// echo "degree:".$degree;
-// echo "<br>";
-
-?>
                             <H2> Skill Assessment Questionnaire</H2>
                             <p>Answer the questions below to receive your tailored skill-building plan based on the field you are interested in</p><br>
                             <form id="truForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
@@ -86,10 +74,8 @@
                                     }
 
                                     ?>
-
-
                                   </div>
-                                <fieldset class="form-group">
+                                    <fieldset class="form-group">
                                         <label>Are you particularly interested in any industry?</label><br>
                                           <div class="col-sm-10">
                                             <div class="form-check">
@@ -111,16 +97,16 @@
                                               </label>
                                             </div>
                                           </div>
-                                </fieldset>
-                                <div class="form-group" id="industryQuestion">
-                                    <label for="formGroupExampleInput">What industry are you interested in?</label>
-                                    <input type="text" class="form-control" id="ajax3" list="third" placeholder="Example input" name="industry">
-                                    <datalist id="third"></datalist>
-                                </div>
+                                    </fieldset>
+                                      <div class="form-group" id="industryQuestion">
+                                        <label for="formGroupExampleInput">What industry are you interested in?</label>
+                                        <input type="text" class="form-control" id="ajax3" list="third" placeholder="Example input" name="industry">
+                                        <datalist id="third"></datalist>
+                                      </div>
                                 
-                                <div style="text-align: center;">
-                                    <input type="submit" name="submit" value="Submit">
-                                </div>
+                                      <div style="text-align: center;">
+                                        <input type="submit" name="submit" value="Submit">
+                                      </div>
                             </form>                           
                         </div>
                 </div>
