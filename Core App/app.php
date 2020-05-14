@@ -1,4 +1,4 @@
-< ? php include 'responseprocessing.php' ? >
+<? php include 'responseprocessing.php'? >
 
   <
   ? php startblock('link') ? >
