@@ -19,11 +19,23 @@ Ultimately, I aimed to build a platform that connected users with third-party ve
 
 <h3>Implementation Specifics<h3>
   
-<h4>app.php</h4>
-
+ 
 <h4>responseprocessing.php</h4>
+
+
+Every user is required to supply either of the following below:
+<ul>
+  <li>Industry of interest</li>
+  <li>Field of study</li>
+  <li>Occupation of interest</li>
+</ul>
+
+Basic job data is already stored in the project's database. The process implemented is to match the users query with the basic data stored in the database. If a match is found, a request is then sent to BLS API using the unique BLS job-code tied to the query result,to get back the more complex data that is then presented to the user.
+
+In responseprocessing.php, I use a combination of SQL and PHP to check the database for an exact match for any of the data the user enters in the front-end. In a situation where an exact match is not found, I query the database for similar matches and return the closest match.
+
+<h4>app.php</h4>
 
 <h4>page.js</h4>
 
-When you type in your choices, we search our database to see if there are matches. How does how database generate its data? The database has information contining BLS job codes, industry names, and degrees pre-stored When a user makes a search, we check our database to see if any of the key BLS elements exist If it exists, we send a request to BLS and parse the BLS result
 
