@@ -36,6 +36,9 @@ In responseprocessing.php, I use a combination of SQL and PHP to check the datab
 
 <h4>app.php</h4>
 
+Here I use the job code returned from the database to form part of the query that is sent to the BLS API. This will then return the full data pertinent to the job code requested, giving me application the ability to present a final, user friendly report to the end-user.
+
 <h4>page.js</h4>
 
+This is where the different front-end validations. Code to handle suggestions as user types in their answers is also implemented here.
 
